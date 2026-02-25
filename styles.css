@@ -27,7 +27,7 @@ h1 {
 .upload {
   display: inline-flex;
   align-items: center;
-  margin: 1rem 0 1.4rem;
+  margin: 1rem 0 1rem;
   padding: 0.7rem 1rem;
   border-radius: 12px;
   background: #2563eb;
@@ -37,6 +37,31 @@ h1 {
 
 .upload input {
   display: none;
+}
+
+.dropzone {
+  border: 2px dashed #3b82f6;
+  background: #0b1227;
+  border-radius: 14px;
+  padding: 1rem;
+  margin: 0 0 1.2rem;
+  text-align: center;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.dropzone.active {
+  border-color: #34d399;
+  background: #10233a;
+}
+
+.drop-title {
+  font-weight: 700;
+  margin: 0 0 0.2rem;
+}
+
+.drop-sub {
+  margin: 0;
+  color: #94a3b8;
 }
 
 .card {

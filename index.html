@@ -19,6 +19,11 @@
         <span>ファイルを選択</span>
       </label>
 
+      <section class="dropzone" id="dropzone" aria-label="ドラッグアンドドロップ領域">
+        <p class="drop-title">ここにファイルをドラッグ＆ドロップ</p>
+        <p class="drop-sub">または上の「ファイルを選択」からアップロード</p>
+      </section>
+
       <section class="card" id="fileMeta" hidden>
         <h2>ファイル情報</h2>
         <dl>
@@ -27,6 +32,7 @@
           <div><dt>ブラウザ MIME</dt><dd id="fileMime">-</dd></div>
           <div><dt>拡張子(参考)</dt><dd id="fileExt">-</dd></div>
           <div><dt>ヘッダー先頭16byte</dt><dd id="fileHeader">-</dd></div>
+          <div><dt>ヘッダー文字列ヒント</dt><dd id="headerHint">-</dd></div>
         </dl>
       </section>
 
