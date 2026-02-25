@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MIME & ヘッダー拡張子推定ツール</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>MIME / ヘッダー解析 拡張子推定</h1>
+      <p class="lead">
+        アップロードされたファイルを、拡張子よりも <strong>MIME type</strong> と
+        <strong>ヘッダー (マジックナンバー)</strong> を優先して判定します。
+      </p>
+
+      <label class="upload" for="fileInput">
+        <input id="fileInput" type="file" />
+        <span>ファイルを選択</span>
+      </label>
+
+      <section class="card" id="fileMeta" hidden>
+        <h2>ファイル情報</h2>
+        <dl>
+          <div><dt>ファイル名</dt><dd id="fileName">-</dd></div>
+          <div><dt>サイズ</dt><dd id="fileSize">-</dd></div>
+          <div><dt>ブラウザ MIME</dt><dd id="fileMime">-</dd></div>
+          <div><dt>拡張子(参考)</dt><dd id="fileExt">-</dd></div>
+          <div><dt>ヘッダー先頭16byte</dt><dd id="fileHeader">-</dd></div>
+        </dl>
+      </section>
+
+      <section class="card" id="resultSection" hidden>
+        <h2>推定結果</h2>
+        <p id="reason"></p>
+        <div class="layout">
+          <canvas id="pieChart" width="360" height="360" aria-label="推定確率円グラフ"></canvas>
+          <ol id="resultList"></ol>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
