@@ -1,0 +1,115 @@
+:root {
+  color-scheme: dark;
+  font-family: "Inter", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.lead {
+  color: #cbd5e1;
+}
+
+.upload {
+  display: inline-flex;
+  align-items: center;
+  margin: 1rem 0 1rem;
+  padding: 0.7rem 1rem;
+  border-radius: 12px;
+  background: #2563eb;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.upload input {
+  display: none;
+}
+
+.dropzone {
+  border: 2px dashed #3b82f6;
+  background: #0b1227;
+  border-radius: 14px;
+  padding: 1rem;
+  margin: 0 0 1.2rem;
+  text-align: center;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.dropzone.active {
+  border-color: #34d399;
+  background: #10233a;
+}
+
+.drop-title {
+  font-weight: 700;
+  margin: 0 0 0.2rem;
+}
+
+.drop-sub {
+  margin: 0;
+  color: #94a3b8;
+}
+
+.card {
+  background: #111827;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+dl {
+  margin: 0;
+}
+
+dl > div {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  padding: 0.2rem 0;
+}
+
+dt {
+  color: #94a3b8;
+}
+
+.layout {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+#resultList {
+  margin: 0;
+  padding-left: 1.2rem;
+  min-width: 230px;
+}
+
+#resultList li {
+  margin: 0.3rem 0;
+}
+
+@media (max-width: 700px) {
+  dl > div {
+    grid-template-columns: 1fr;
+  }
+}
